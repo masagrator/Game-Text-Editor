@@ -1,5 +1,5 @@
 """
-    python message_dump_editor.py
+    python editor.py
 """
 
 import configparser, json, os, re, sys
@@ -685,7 +685,7 @@ class FontDialog(tk.Toplevel):
 class TextEditorApp(tk.Tk):
     def __init__(self, paths=None):
         super().__init__()
-        self.title("JSON Text Editor")
+        self.title("Game Text Editor")
         self.configure(bg=BG)
         self.geometry("1380x780")
         self.minsize(960, 580)
@@ -1530,7 +1530,7 @@ class TextEditorApp(tk.Tk):
             self.count_label.config(text="")
             self._clear_editor()
             self.status_var.set("Open one or more JSON files to begin.")
-            self.title("JSON Text Editor")
+            self.title("Game Text Editor")
 
     # ══════════════════════════════════════════════════════════════════════
     # FILE LIST
@@ -1570,7 +1570,7 @@ class TextEditorApp(tk.Tk):
         self._suppress = False
         self._rebuild_entry_list(fs.search_query)
         self._update_mod_count()
-        self.title(f"JSON Text Editor  —  {fs.basename}")
+        self.title(f"Game Text Editor  —  {fs.basename}")
         if fs.current_index is not None and fs.current_index in fs.filtered_indices:
             self._select_entry_item(fs.filtered_indices.index(fs.current_index))
         elif fs.filtered_indices:
