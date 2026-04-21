@@ -15,3 +15,5 @@ Functionality:
 - Configurable shortcuts
 - Configurable text font
 - Syntax highlighting for BR, RUBY and VO tags, and C format specifiers
+
+![PREVIEW](https://github.com/masagrator/Game-Text-Editor/blob/main/Preview.jpg?raw=true)
